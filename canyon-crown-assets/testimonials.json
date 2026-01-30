@@ -1,0 +1,43 @@
+{
+  "testimonials": [
+    {
+      "name": "Sarah Mitchell",
+      "location": "Holladay, UT",
+      "service": "Tree Removal",
+      "rating": 5,
+      "text": "Canyon Crown Tree removed a massive cottonwood that was threatening our garage. Alex came out personally for the estimate, explained every step, and his crew was incredible — professional, careful, and they left our yard cleaner than they found it. Worth every penny for the peace of mind.",
+      "date": "2024-09-15"
+    },
+    {
+      "name": "David Chen",
+      "location": "Sandy, UT",
+      "service": "Pruning & Trimming",
+      "rating": 5,
+      "text": "We've used Canyon Crown for annual pruning of our mature maples and oaks for three years now. The difference in our trees' health and appearance is remarkable. They actually care about doing it right — no topping, proper cuts, and they always take the time to explain what they're doing and why.",
+      "date": "2024-11-02"
+    },
+    {
+      "name": "Jennifer Patel",
+      "location": "Salt Lake City, UT",
+      "service": "Emergency Services",
+      "rating": 5,
+      "text": "A huge branch came down on our fence during a windstorm at 11pm. I called Canyon Crown's emergency line and they had a crew at our house within 90 minutes. They secured the situation, came back the next morning to finish, and even helped us document everything for our insurance claim. Absolute lifesavers.",
+      "date": "2024-07-22"
+    },
+    {
+      "name": "Mark Thompson",
+      "location": "Draper, UT",
+      "service": "Stump Grinding",
+      "rating": 5,
+      "text": "Had four stumps ground down after removing some old pines. The crew was efficient, the pricing was fair and upfront — no surprise charges. They ground the stumps well below grade and cleaned up all the chips. Now we finally have a usable backyard again. Highly recommend.",
+      "date": "2024-08-30"
+    },
+    {
+      "name": "Lisa Ramirez",
+      "location": "Cottonwood Heights, UT",
+      "service": "Tree Health Care",
+      "rating": 5,
+      "text": "Our beautiful old silver maple was looking terrible — yellowing leaves, sparse canopy. Alex diagnosed iron chlorosis and set up a treatment plan. Two seasons later, our tree looks healthier than it has in a decade. Canyon Crown genuinely cares about saving trees, not just cutting them down. They're our go-to for everything tree-related."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Tree Crown Icon -->
+  <g transform="translate(5, 2)">
+    <!-- Tree canopy -->
+    <path d="M28 8C28 8 20 2 14 8C8 14 10 22 10 22C10 22 4 20 4 28C4 36 12 38 12 38C12 38 8 42 14 46C20 50 28 46 28 46C28 46 36 50 42 46C48 42 44 38 44 38C44 38 52 36 52 28C52 20 46 22 46 22C46 22 48 14 42 8C36 2 28 8 28 8Z" fill="#228B22"/>
+    <!-- Tree trunk -->
+    <rect x="24" y="44" width="8" height="12" rx="1" fill="#8B4513"/>
+    <!-- Leaf details -->
+    <path d="M20 18C20 18 24 14 28 18" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M28 18C28 18 32 14 36 18" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M16 28C16 28 22 22 28 28" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M28 28C28 28 34 22 40 28" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M22 36C22 36 25 32 28 36" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M28 36C28 36 31 32 34 36" stroke="#1a6b1a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Text -->
+  <text x="68" y="28" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="22" fill="#1B3A1B">CANYON CROWN</text>
+  <text x="68" y="50" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="16" letter-spacing="4" fill="#228B22">TREE</text>
+</svg>

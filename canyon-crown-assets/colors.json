@@ -1,0 +1,70 @@
+{
+  "palette": {
+    "primary": {
+      "name": "Forest Green",
+      "hex": "#228B22",
+      "rgb": "34, 139, 34",
+      "usage": "Primary buttons, headings, accents"
+    },
+    "primaryDark": {
+      "name": "Dark Forest",
+      "hex": "#1a6b1a",
+      "rgb": "26, 107, 26",
+      "usage": "Hover states, dark accents"
+    },
+    "secondary": {
+      "name": "Saddle Brown",
+      "hex": "#8B4513",
+      "rgb": "139, 69, 19",
+      "usage": "Secondary buttons, accents, borders"
+    },
+    "secondaryLight": {
+      "name": "Peru",
+      "hex": "#CD853F",
+      "rgb": "205, 133, 63",
+      "usage": "Warm highlights, hover states"
+    },
+    "accent": {
+      "name": "Sky Blue",
+      "hex": "#4A90D9",
+      "rgb": "74, 144, 217",
+      "usage": "Links, info elements, sky-related imagery"
+    },
+    "background": {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "rgb": "255, 255, 255",
+      "usage": "Main background"
+    },
+    "backgroundAlt": {
+      "name": "White Smoke",
+      "hex": "#F5F5F5",
+      "rgb": "245, 245, 245",
+      "usage": "Alternating sections, card backgrounds"
+    },
+    "backgroundDark": {
+      "name": "Dark Green",
+      "hex": "#1B3A1B",
+      "rgb": "27, 58, 27",
+      "usage": "Footer, dark sections"
+    },
+    "text": {
+      "name": "Charcoal",
+      "hex": "#333333",
+      "rgb": "51, 51, 51",
+      "usage": "Body text"
+    },
+    "textLight": {
+      "name": "Gray",
+      "hex": "#666666",
+      "rgb": "102, 102, 102",
+      "usage": "Secondary text, captions"
+    },
+    "textOnDark": {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "rgb": "255, 255, 255",
+      "usage": "Text on dark backgrounds"
+    }
+  }
+}

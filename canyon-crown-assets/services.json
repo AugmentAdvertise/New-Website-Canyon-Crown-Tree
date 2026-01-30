@@ -1,0 +1,94 @@
+{
+  "services": [
+    {
+      "id": "tree-removal",
+      "name": "Tree Removal",
+      "shortDescription": "Safe removal of hazardous, dead, or unwanted trees from your property.",
+      "fullDescription": "Our certified arborists safely remove trees of all sizes using industry-leading techniques and equipment. Whether you have a storm-damaged tree threatening your home, a dead tree that's become a liability, or simply need to clear space for a new project, our crew handles it with precision and care. We use rigging systems for confined spaces, cranes for large removals, and always prioritize protecting your property and landscaping. Every removal includes full debris cleanup and wood recycling.",
+      "features": [
+        "Hazardous tree assessment",
+        "Crane-assisted removals",
+        "Confined space rigging",
+        "Complete debris cleanup",
+        "Wood recycling and chip delivery",
+        "Permit assistance when needed"
+      ],
+      "icon": "tree-removal"
+    },
+    {
+      "id": "pruning-trimming",
+      "name": "Pruning & Trimming",
+      "shortDescription": "Expert pruning to improve tree health, appearance, and safety.",
+      "fullDescription": "Proper pruning is the foundation of tree health. Our ISA-certified arborists use science-based techniques to improve your trees' structure, health, and appearance. We perform crown thinning to increase light penetration, crown raising to improve clearance, deadwood removal to eliminate hazards, and structural pruning to develop strong branch architecture. We follow ANSI A300 pruning standards and never top trees — a harmful practice that weakens trees and invites disease.",
+      "features": [
+        "Crown thinning and cleaning",
+        "Crown raising and reduction",
+        "Deadwood removal",
+        "Structural pruning",
+        "Vista pruning for views",
+        "Fruit tree pruning"
+      ],
+      "icon": "pruning"
+    },
+    {
+      "id": "stump-grinding",
+      "name": "Stump Grinding",
+      "shortDescription": "Complete stump removal to reclaim your yard space.",
+      "fullDescription": "After a tree is removed, the remaining stump can be an eyesore, a tripping hazard, and an invitation for pests. Our professional stump grinding service eliminates stumps quickly and efficiently, grinding them 6-12 inches below grade so you can replant, resod, or landscape the area. We use commercial-grade grinders that handle stumps of any size, and we always clean up the wood chips — or leave them for you to use as mulch if you prefer.",
+      "features": [
+        "Stumps ground 6-12 inches below grade",
+        "Any size stump handled",
+        "Root grinding available",
+        "Chips cleaned up or left as mulch",
+        "Surface roots addressed",
+        "Area ready for replanting"
+      ],
+      "icon": "stump"
+    },
+    {
+      "id": "emergency-services",
+      "name": "Emergency Tree Services",
+      "shortDescription": "24/7 emergency response for storm damage and hazardous trees.",
+      "fullDescription": "Utah storms don't wait for business hours, and neither do we. Our emergency tree service team is available 24/7, 365 days a year to respond to storm damage, fallen trees, and dangerous situations. We prioritize calls involving trees on structures, blocking roads, or threatening power lines. Our crews are trained in emergency response protocols and carry the specialized equipment needed to handle the most challenging situations safely and quickly.",
+      "features": [
+        "24/7/365 availability",
+        "Rapid response times",
+        "Storm damage cleanup",
+        "Trees on structures",
+        "Power line clearance coordination",
+        "Insurance claim documentation"
+      ],
+      "icon": "emergency"
+    },
+    {
+      "id": "tree-health-care",
+      "name": "Tree Health Care",
+      "shortDescription": "Diagnosis and treatment to keep your trees thriving.",
+      "fullDescription": "Healthy trees add beauty, shade, and value to your property. Our plant health care program combines proactive monitoring with targeted treatments to keep your trees in peak condition. Our certified arborists diagnose issues ranging from nutrient deficiencies and drought stress to insect infestations and fungal diseases common in Utah, such as fireblight, iron chlorosis, and bark beetle damage. We use integrated pest management (IPM) strategies that minimize chemical use while maximizing tree health.",
+      "features": [
+        "Certified arborist diagnosis",
+        "Deep root fertilization",
+        "Insect and disease treatment",
+        "Iron chlorosis treatment",
+        "Drought stress management",
+        "Ongoing monitoring programs"
+      ],
+      "icon": "health"
+    },
+    {
+      "id": "tree-planting",
+      "name": "Tree Planting",
+      "shortDescription": "Expert selection and planting of trees suited to Utah's climate.",
+      "fullDescription": "Planting the right tree in the right place is one of the best investments you can make in your property. Our arborists help you select species that thrive in Utah's unique climate and soil conditions, considering factors like mature size, water needs, sun exposure, and your aesthetic preferences. We handle everything from site preparation to proper planting technique, and we provide aftercare guidance to give your new trees the best start. Popular choices for the Salt Lake City area include Gambel oak, quaking aspen, blue spruce, and honeylocust.",
+      "features": [
+        "Species selection guidance",
+        "Site analysis and preparation",
+        "Proper planting technique",
+        "Aftercare instructions",
+        "Watering program setup",
+        "Growth monitoring available"
+      ],
+      "icon": "planting"
+    }
+  ]
+}
