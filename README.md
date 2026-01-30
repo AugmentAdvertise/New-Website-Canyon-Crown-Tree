@@ -77,7 +77,10 @@ Brand new website for **Canyon Crown Tree**, a professional tree care and remova
 
 ## Deployment
 
-This site is designed for deployment on Vercel. Simply connect the GitHub repository to Vercel for automatic deployments.
+- **Live Site:** https://canyon-crown-tree.vercel.app
+- **GitHub Repo:** https://github.com/AugmentAdvertise/New-Website-Canyon-Crown-Tree
+
+Hosted on Vercel with automatic deployments from the `main` branch.
 
 ## Design Patterns Applied
 
