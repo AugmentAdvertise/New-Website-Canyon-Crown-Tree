@@ -10,27 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. MOBILE NAVIGATION TOGGLE
   // ============================================================
 
-  const navToggle = document.querySelector('.nav-toggle') ||
-                    document.querySelector('.hamburger') ||
-                    document.querySelector('.mobile-toggle');
-  const navMenu   = document.querySelector('.nav-menu') ||
-                    document.querySelector('.main-nav') ||
-                    document.querySelector('.mobile-nav');
-  const navOverlay = document.querySelector('.nav-overlay');
+  const navToggle = document.querySelector('.mobile-menu-toggle');
+  const navMenu   = document.querySelector('.nav-menu');
   const body = document.body;
 
   const closeNav = () => {
     navToggle?.classList.remove('active');
     navMenu?.classList.remove('open');
-    navOverlay?.classList.remove('visible');
     body.classList.remove('nav-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
   };
 
   const openNav = () => {
     navToggle?.classList.add('active');
     navMenu?.classList.add('open');
-    navOverlay?.classList.add('visible');
     body.classList.add('nav-open');
+    navToggle?.setAttribute('aria-expanded', 'true');
   };
 
   navToggle?.addEventListener('click', (e) => {
@@ -39,9 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     isOpen ? closeNav() : openNav();
   });
 
-  // Close nav when clicking the overlay or a menu link
-  navOverlay?.addEventListener('click', closeNav);
-
+  // Close nav when clicking a menu link
   navMenu?.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       if (window.innerWidth < 992) closeNav();
@@ -538,11 +531,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 13. COUNTER ANIMATION (count up when scrolled into view)
   // ============================================================
 
-  const counters = document.querySelectorAll('.counter, [data-count]');
+  const counters = document.querySelectorAll('.counter, [data-target], [data-count]');
 
   if (counters.length > 0) {
     const animateCounter = (el) => {
-      const target   = parseInt(el.dataset.count || el.textContent, 10);
+      const target   = parseInt(el.dataset.target || el.dataset.count || el.textContent, 10);
       const duration = 2000; // ms
       const start    = performance.now();
       const suffix   = el.dataset.suffix || '';
@@ -587,7 +580,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 14. ACTIVE NAVIGATION LINK HIGHLIGHTING
   // ============================================================
 
-  const navLinks = document.querySelectorAll('.nav-menu a, .main-nav a');
+  const navLinks = document.querySelectorAll('.nav-menu__link');
 
   if (navLinks.length > 0) {
     const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
@@ -601,7 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentPath.endsWith(linkPath) ||
         (linkPath !== '/' && currentPath.includes(linkPath))
       ) {
-        link.classList.add('active');
+        link.classList.add('nav-menu__link--active');
         // Also mark parent li if nested
         link.closest('li')?.classList.add('active');
       }
@@ -673,15 +666,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ============================================================
-  // 17. DROPDOWN MENU HOVER (Desktop)
+  // 17. DROPDOWN MENU HOVER (Desktop) & CLICK (Mobile)
   // ============================================================
 
-  const dropdownParents = document.querySelectorAll(
-    '.nav-menu .has-dropdown, .main-nav .has-dropdown, .dropdown-parent'
-  );
+  const dropdownParents = document.querySelectorAll('.nav-menu__item--dropdown');
 
   dropdownParents.forEach((parent) => {
-    const dropdown = parent.querySelector('.dropdown, .dropdown-menu, .sub-menu');
+    const dropdown = parent.querySelector('.nav-dropdown');
     if (!dropdown) return;
 
     let hoverTimeout;
@@ -704,7 +695,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mobile click/tap behavior
-    const toggle = parent.querySelector('.dropdown-toggle');
+    const toggle = parent.querySelector('.nav-menu__link--dropdown');
     toggle?.addEventListener('click', (e) => {
       if (window.innerWidth >= 992) return;
       e.preventDefault();
@@ -719,7 +710,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeAllDropdowns = () => {
     dropdownParents.forEach((p) => {
-      p.querySelector('.dropdown, .dropdown-menu, .sub-menu')?.classList.remove('open');
+      p.querySelector('.nav-dropdown')?.classList.remove('open');
       p.classList.remove('dropdown-active');
     });
   };
