@@ -1781,14 +1781,19 @@ p:last-child { margin-bottom: 0; }
 
   .top-bar { display: none; }
 
+  body {
+    background: var(--color-bg-dark);
+    padding-bottom: 4.5rem;
+  }
+
   .header {
-    position: sticky !important;
+    position: relative !important;
     top: 0 !important;
     height: var(--header-height-scrolled);
     background: var(--color-bg-dark) !important;
     margin: 0;
     border: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: none;
   }
   .header .logo-img { height: 36px; }
 
@@ -1799,9 +1804,14 @@ p:last-child { margin-bottom: 0; }
     padding-top: 0 !important;
   }
 
-  /* Add bottom padding for sticky CTA bar */
-  body {
-    padding-bottom: 4.5rem;
+  /* Restore white bg for content sections below hero */
+  .section,
+  .features,
+  .stats,
+  .testimonials,
+  footer,
+  main > *:not(.hero):not(.page-hero) {
+    background: var(--color-bg);
   }
 
   .mobile-menu-btn { display: flex; }
