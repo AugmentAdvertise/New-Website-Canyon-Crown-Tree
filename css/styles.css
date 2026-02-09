@@ -1789,13 +1789,16 @@ p:last-child { margin-bottom: 0; }
   .header {
     position: relative !important;
     top: 0 !important;
-    height: var(--header-height-scrolled);
+    height: auto;
+    padding: 0.5rem 0;
     background: var(--color-bg-dark) !important;
-    margin: 0;
-    border: none;
-    box-shadow: none;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
   .header .logo-img { height: 36px; }
+  .header .container,
+  .header .nav { margin: 0; padding: 0 var(--container-pad); }
 
   /* No margin/gap between header and hero on mobile */
   .page-hero,
