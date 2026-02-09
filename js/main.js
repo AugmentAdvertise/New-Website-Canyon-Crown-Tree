@@ -363,7 +363,29 @@ function initFormValidation() {
     });
     if (valid) {
       const btn = form.querySelector('[type="submit"]');
-      if (btn) { btn.textContent = 'Message Sent!'; btn.disabled = true; }
+      const data = new FormData(form);
+      if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
+      data.append('_subject', 'New Lead from CanyonCrownTreeCo.com');
+      data.append('_replyto', data.get('email'));
+      fetch('https://formspree.io/canyoncrowntreeco@gmail.com', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(r => {
+        if (r.ok) {
+          if (btn) btn.textContent = 'Message Sent! ✓';
+          form.reset();
+        } else {
+          // Fallback to mailto
+          const fields = Object.fromEntries(data.entries());
+          const subject = encodeURIComponent('Contact from ' + (fields.firstName || '') + ' ' + (fields.lastName || ''));
+          const body = encodeURIComponent('Name: ' + (fields.firstName||'') + ' ' + (fields.lastName||'') + '\\nEmail: ' + (fields.email||'') + '\\nPhone: ' + (fields.phone||'') + '\\nService: ' + (fields.service||'') + '\\nMessage: ' + (fields.message||''));
+          window.location.href = 'mailto:canyoncrowntreeco@gmail.com?subject=' + subject + '&body=' + body;
+          if (btn) { btn.textContent = 'Send Message'; btn.disabled = false; }
+        }
+      }).catch(() => {
+        if (btn) { btn.textContent = 'Error — Please Call (385) 215-9973'; btn.disabled = false; }
+      });
     }
   });
 }

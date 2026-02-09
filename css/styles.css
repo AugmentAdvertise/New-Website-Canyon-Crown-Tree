@@ -324,6 +324,11 @@ p:last-child { margin-bottom: 0; }
   transition: all var(--transition-base);
   background: var(--color-bg-dark);
   box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+}
+.header > .container {
+  height: 100%;
 }
 .header.scrolled {
   top: 0;
