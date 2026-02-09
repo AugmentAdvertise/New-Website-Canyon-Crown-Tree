@@ -1782,15 +1782,20 @@ p:last-child { margin-bottom: 0; }
   .top-bar { display: none; }
 
   .header {
+    position: sticky !important;
     top: 0 !important;
     height: var(--header-height-scrolled);
+    background: var(--color-bg-dark) !important;
+    margin: 0;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
   .header .logo-img { height: 36px; }
 
-  /* Remove top-bar gap from content since top-bar is hidden on mobile */
+  /* No margin/gap between header and hero on mobile */
   .page-hero,
   .hero {
-    margin-top: var(--header-height-scrolled) !important;
+    margin-top: 0 !important;
     padding-top: 0 !important;
   }
 
@@ -1828,10 +1833,7 @@ p:last-child { margin-bottom: 0; }
   .dropdown li a:hover { background: transparent; padding-left: 0.5rem; }
   .nav-cta { margin-left: 0 !important; margin-top: var(--space-lg); text-align: center; }
 
-  .header {
-    background: rgba(0,77,64,0.95);
-    backdrop-filter: blur(12px);
-  }
+  /* header background already set above — solid, no transparency */
 
   .hero-content { padding: var(--space-3xl) 0; }
   .hero-title { font-size: clamp(2rem, 7vw, 2.8rem); }
