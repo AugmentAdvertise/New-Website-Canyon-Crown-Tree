@@ -1790,7 +1790,13 @@ p:last-child { margin-bottom: 0; }
   /* Remove top-bar gap from content since top-bar is hidden on mobile */
   .page-hero,
   .hero {
-    padding-top: calc(var(--header-height-scrolled) + var(--space-3xl)) !important;
+    margin-top: var(--header-height-scrolled) !important;
+    padding-top: 0 !important;
+  }
+
+  /* Add bottom padding for sticky CTA bar */
+  body {
+    padding-bottom: 4.5rem;
   }
 
   .mobile-menu-btn { display: flex; }
