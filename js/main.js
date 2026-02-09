@@ -367,7 +367,7 @@ function initFormValidation() {
       if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
       data.append('_subject', 'New Lead from CanyonCrownTreeCo.com');
       data.append('_replyto', data.get('email'));
-      fetch('https://formspree.io/canyoncrowntreeco@gmail.com', {
+      fetch('https://formspree.io/f/mlgwdzeo', {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
